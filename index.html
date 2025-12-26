@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome Cognome</title>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+    header, section, footer { margin-bottom: 48px; }
+    h1, h2 { line-height: 1.3; }
+    h2 { margin-top: 32px; }
+    a { color: #0366d6; text-decoration: none; }
+    ul { padding-left: 20px; }
+    .tool-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+    .tool-card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 200px; text-align: center; }
+    .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .photo-grid img { width: 100%; border-radius: 8px; object-fit: cover; max-height: 250px; transition: transform 0.3s ease; }
+    .photo-grid img:hover { transform: scale(1.05); }
+    footer { font-size: 0.9em; color: #666; margin-top: 64px; }
+    @media(max-width: 600px) { .tool-card { width: 100%; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nome Cognome</h1>
+  <p>Software Engineer | Product & Systems Thinking | Learning constantly</p>
+</header>
+
+<section id="books">
+  <h2>📚 Books</h2>
+  <ul>
+    <li><strong>Clean Architecture</strong> — Robert C. Martin<br><em>Domain first, frameworks later.</em></li>
+    <li><strong>Inspired</strong> — Marty Cagan<br><em>Empowered teams build better products.</em></li>
+    <!-- aggiungi altri libri qui -->
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>🛠️ Projects</h2>
+  <p>Selected projects I worked on in the past (more coming soon).</p>
+  <!-- puoi aggiungere qui dettagli dei progetti -->
+</section>
+
+<section id="tools">
+  <h2>🛠️ Tools I frequently use</h2>
+  <div class="tool-grid">
+    <div class="tool-card">
+      <strong>ChatGPT</strong><br>Productivity
+    </div>
+    <div class="tool-card">
+      <strong>Notion</strong><br>Organization
+    </div>
+    <!-- aggiungi altri tools qui -->
+  </div>
+</section>
+
+<section id="photos">
+  <h2>🌄 Photography</h2>
+  <div class="photo-grid">
+    <img src="images/montagna.jpg" alt="Montagna">
+    <img src="images/tramonto.jpg" alt="Tramonto">
+    <img src="images/lago.jpg" alt="Lago">
+    <!-- aggiungi altre foto qui -->
+  </div>
+</section>
+
+<footer>
+  <p>
+    <a href="https://www.linkedin.com/in/tuo-profilo">LinkedIn</a> · 
+    <a href="https://github.com/tuo-username">GitHub</a>
+  </p>
+</footer>
+
+</body>
+</html>
