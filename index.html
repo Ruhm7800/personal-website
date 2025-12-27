@@ -11,8 +11,26 @@
     h2 { margin-top: 32px; }
     a { color: #0366d6; text-decoration: none; }
     ul { padding-left: 20px; }
-    .tool-grid { display: flex; flex-wrap: wrap; gap: 16px; }
-    .tool-card { border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 200px; text-align: center; }
+   .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    }
+
+    .tool-card {
+    background-color: #f9f9f9; /* colore di sfondo chiaro */
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .tool-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
     .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
     .photo-grid img { width: 100%; border-radius: 8px; object-fit: cover; max-height: 250px; transition: transform 0.3s ease; }
     .photo-grid img:hover { transform: scale(1.05); }
@@ -52,17 +70,28 @@
 
 
 <section id="tools">
-  <h2>🛠️ Tools I frequently use</h2>
+  <h2>Tools I Frequently Use</h2>
   <div class="tool-grid">
-    <div class="tool-card">
-      <strong>ChatGPT</strong><br>Productivity
-    </div>
-    <div class="tool-card">
-      <strong>Notion</strong><br>Organization
-    </div>
-    <!-- aggiungi altri tools qui -->
+
+    <!-- Data Analysis / BI -->
+    <div class="tool-card"><strong>QlikView</strong><br>Dashboards & Analytics & Data Visualization</div>
+    <div class="tool-card"><strong>Qlik Sense</strong><br>Dashboards & Analytics & Data Visualization</div>
+    <div class="tool-card"><strong>SQL / MySQL / PostgreSQL</strong><br>Database querying & data extraction</div>
+    <div class="tool-card"><strong>Excel</strong><br>Data manipulation, pivot tables & reporting</div>
+
+    <!-- Development / Coding -->
+    <div class="tool-card"><strong>VS Code</strong><br>Code editor & software development</div>
+    <div class="tool-card"><strong>Python</strong><br>Data analysis, scripting & automation</div>
+    <div class="tool-card"><strong>R</strong><br>Statistical analysis & data visualization</div>
+    <div class="tool-card"><strong>RStudio</strong><br>R development environment</div>
+
+
+    <!-- AI / Machine Learning -->
+    <div class="tool-card"><strong>Gemini / ChatGPT</strong><br>AI assistant for code, data analysis & content generation</div>
+
   </div>
 </section>
+
 
 <section id="photos">
   <h2>🌄 Photography</h2>
